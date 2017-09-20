@@ -1,7 +1,7 @@
-create database eternity;
+create database  if not exists eternity;
 use eternity;
 
-CREATE TABLE galery (
+CREATE TABLE if not exists galery (
   picture VARCHAR(255) NOT NULL,
   user_id INTEGER UNSIGNED NOT NULL,
   PRIMARY KEY(picture),
@@ -9,7 +9,7 @@ CREATE TABLE galery (
 )
 ENGINE=InnoDB;
 
-CREATE TABLE users (
+CREATE TABLE if not exists users (
   id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   name VARCHAR(255) NULL,
   pass VARCHAR(20) NULL,
