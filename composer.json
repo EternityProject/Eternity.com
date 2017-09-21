@@ -15,5 +15,8 @@
 		{
 			"App\\": "src"
 		}
+	},
+	"require": {
+		"smarty/smarty": "^3.1"
 	}
 }

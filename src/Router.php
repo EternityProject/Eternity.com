@@ -13,32 +13,13 @@ class Router
 	
 	public function getController( Request $req )
 	{
-	     
-	}
-    
-	public function sum($a,$b)
-	{
+	   $path   = $req->getPath();
+	   $found  = array_key_exists( $path, $this->conf );
+	   if( $found )
+	   {
+	       return new $this->conf[$path];
+	   }
 	   
-	   return $a+$b;
+	   return new $this->conf['404']; 
 	}
-	
-    static $routes = array();
-    public static function add($link, $url, $as = null){
-        self::$routes[] = [
-            'link'  =>  $link, 
-            'url'   =>  $url,
-            'as'    =>  $as
-                ];
-    }
-    public static function getArray(){
-        return self::$routes;
-    }
-    public static function name($input){
-        foreach (self::$routes as $r){
-            if($input == $r['as'] || $input == $r['link']){
-                echo $r['link'];
-                break;
-            }
-        }
-    }
 }
