@@ -2,6 +2,6 @@
 
 return array (
 	'/'	=> '\App\Controller\Home',
-	'gallery' => '\App\Controller\Gallery'
-
+	'/gallery' => '\App\Controller\Gallery'
+    
 );

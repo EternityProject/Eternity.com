@@ -10,7 +10,18 @@ class Router
 	{
 		$this->conf = $configuration;
 	}
+	
+	public function getController( Request $req )
+	{
+	     
+	}
     
+	public function sum($a,$b)
+	{
+	   
+	   return $a+$b;
+	}
+	
     static $routes = array();
     public static function add($link, $url, $as = null){
         self::$routes[] = [
