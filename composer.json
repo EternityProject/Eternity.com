@@ -1,0 +1,22 @@
+{
+	"name": 	"deyan/eternity", 
+	"description": "photo gallery",
+	"license": "proprietary",
+	"type": "project",
+	
+	"config": 
+	{
+		"optimize-autoloader": true
+	},
+		
+	"autoload": 
+	{
+		"psr-4": 
+		{
+			"App\\": "src"
+		}
+	},
+	"require": {
+		"smarty/smarty": "^3.1"
+	}
+}

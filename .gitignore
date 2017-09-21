@@ -1,2 +1,7 @@
 .vagrant/
 composer.lock
+vendor/
+template_c/
+.buildpath
+.project
+.settings/
